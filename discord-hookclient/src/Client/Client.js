@@ -8,7 +8,8 @@ const EventEmitter = require('events')
 class Webhook extends EventEmitter {
 
     constructor(id, token) {
-
+        super()
+        
         this.id = id
         this.token = token
 
