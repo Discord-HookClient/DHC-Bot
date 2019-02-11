@@ -6,8 +6,7 @@ const prefix = "m)"
 const adminPerms = ["owner", "server_admin", "moderator"]
 const admins = [process.env.owner]
 
-global.embed = discord.RichEmbed()
-
+global.embed = discord.RichEmbed
 bot.commands = new Map()
 
 require('fs').readdir('./commands/', (err, files) => {
