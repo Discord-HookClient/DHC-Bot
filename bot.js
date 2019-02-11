@@ -3,6 +3,8 @@ const bot = new discord.Client()
 const hookclient = require('./dhc.js')
 const hook = new hookclient.WebhookClient(process.env.id, process.env.token)
 const prefix = "m)"
+const adminPerms = ["owner", "server_admin", "moderator"]
+const admins = [process.env.owner]
 
 bot.commands = new Map()
 
