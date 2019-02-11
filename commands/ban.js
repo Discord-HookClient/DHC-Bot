@@ -18,7 +18,7 @@ module.exports.run = (bot, message, args) => {
   .catch(err => {
     message.channel.send(`I couldn't ban ${member.displayName}...`)
   })
-
+}
 module.exports.help = {
   perm: "owner",
   name: "ban"
